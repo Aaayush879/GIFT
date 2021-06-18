@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import log from './log.jpg';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div style={{width:'100%' , height:'100%' , backgroundImage:`url(${log})`, backgroundSize:'cover' , backgroundRepeat:"no-repeat"}} >
+      <App/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
